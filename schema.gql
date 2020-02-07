@@ -6,6 +6,11 @@
 type Dog {
   name: String
   breed: String
+  age: Float
+}
+
+type Mutation {
+  updateDog(age: Float!, name: String!): Dog!
 }
 
 type Query {
